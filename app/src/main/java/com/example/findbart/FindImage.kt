@@ -22,11 +22,11 @@ class FindImage : AppCompatActivity() {
     }//onCreate
 
 
-    fun startTimer (view : View) {
+    fun startTimer () {
         if (!counterActive) {
             counterActive = true
 
-            countDownTimer = object : CountDownTimer(1500, 1000) {
+            countDownTimer = object : CountDownTimer(16000, 1000) {
                 override fun onTick(p0: Long) {
                     updateTimer((p0 / 1000).toInt())
                 }
