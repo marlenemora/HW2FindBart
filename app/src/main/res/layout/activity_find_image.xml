@@ -10,8 +10,8 @@
         android:id="@+id/timerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:text="00:15"
+        android:layout_marginTop="60dp"
+        android:text="00:10"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -19,19 +19,510 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="409dp"
-        android:layout_height="588dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="142dp">
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:columnCount="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerView"
+        app:rowCount="10">
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_column="0"
-            app:layout_row="0"
-            app:srcCompat="@drawable/homer" />
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="6"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="7"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="8"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton22"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton33"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton44"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton55"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton66"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="6"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton77"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="7"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton88"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="8"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton111"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton222"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton333"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton444"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton555"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="5"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton666"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="6"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton777"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="7"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton888"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="8"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/imageButton1111"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton2222"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton3333"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton4444"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="4"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton5555"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bart"
+            android:onClick="correct"
+
+            app:layout_column="5"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton6666"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="6"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton7777"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="7"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton8888"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="8"
+            app:layout_row="4" />
+
+        <ImageButton
+            android:id="@+id/imageButton11111"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton22222"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="2"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton33333"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="3"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton44444"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="4"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton55555"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="5"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton66666"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="6"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton77777"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="7"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/imageButton88888"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="8"
+            app:layout_row="5" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton111111"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="1"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton222222"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="2"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton333333"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="3"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton444444"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="4"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton555555"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="5"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton666666"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="6"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton777777"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="7"
+            app:layout_row="6" />
+
+        <ImageButton
+            android:id="@+id/imageButton8888888"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:background="@drawable/homer"
+            android:onClick="wrong"
+
+            app:layout_column="8"
+            app:layout_row="6" />
+
     </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Play Again"
+        android:onClick="playAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
