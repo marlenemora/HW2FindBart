@@ -83,6 +83,7 @@ class FindImage : AppCompatActivity() {
     }//resetTime
 
     fun playAgain(view: View){
+        countDownTimer.cancel()
         counterActive = false
         startTimer()
     }//playAgain
